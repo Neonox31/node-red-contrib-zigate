@@ -1,0 +1,40 @@
+{
+  "name": "@neonox31/node-red-contrib-zigate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\"",
+    "release": "standard-version -m \"chore(release): version %s\" -t \"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neonox31/node-red-contrib-zigate.git"
+  },
+  "author": "WEBER Logan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neonox31/node-red-contrib-zigate/issues"
+  },
+  "homepage": "https://github.com/Neonox31/node-red-contrib-zigate#readme",
+  "keywords": [ "node-red" ],
+  "node-red": {
+    "nodes": {
+      "zigate-config": "src/nodes/config/config.js",
+      "zigate-in": "src/nodes/in/in.js",
+      "zigate-out": "src/nodes/out/out.js",
+      "zigate-xiaomi-aqara-button": "src/nodes/xiaomi/aqara-button/aqara-button.js",
+      "zigate-xiaomi-aqara-door-sensor": "src/nodes/xiaomi/aqara-door-sensor/aqara-door-sensor.js",
+      "zigate-xiaomi-aqara-weather-sensor": "src/nodes/xiaomi/aqara-weather-sensor/aqara-weather-sensor.js"
+    }
+  },
+  "dependencies": {
+    "rxjs": "^6.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "node-red": "^0.18.7",
+    "node-red-node-test-helper": "^0.1.8",
+    "should": "^13.2.2",
+    "standard-version": "^4.4.0"
+  }
+}

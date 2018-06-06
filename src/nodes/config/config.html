@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    RED.nodes.registerType('zigate-config', {
+        category: 'config',
+        defaults: {
+            serialPort: { value: "/dev/ttyUSB0", required: true }
+        },
+        label: function () {
+            return this.serialPort;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="zigate-config">
+    <div class="form-row">
+        <label for="node-config-input-serialPort"><i class="icon-bookmark"></i> Serial port</label>
+        <input type="text" id="node-config-input-serialPort">
+    </div>
+</script>

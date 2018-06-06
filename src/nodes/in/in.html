@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('zigate-in', {
+        category: 'input',
+        color: '#84AACE',
+        defaults: {
+            name: { value: "" },
+            zigate: { type: "zigate-config", required: true }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "bridge.png",
+        label: function() {
+            return this.name || "ZiGate input";
+        },
+        paletteLabel: "ZiGate input"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="zigate-in">
+    <div class="form-row">
+        <label for="node-input-zigate"><i class="fa fa-globe"></i> ZiGate</label>
+        <input type="text" id="node-input-zigate">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="zigate-in">
+    <p>ZiGate input</p>
+</script>

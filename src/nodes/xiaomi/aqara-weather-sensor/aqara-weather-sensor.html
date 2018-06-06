@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType('zigate-xiaomi-aqara-weather-sensor', {
+        category: 'zigate devices',
+        color: '#84AACE',
+        defaults: {
+            zigate: { type: "zigate-config", required: true },
+            name: { value: "" },
+            shortAddress: { value: "", required: true }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "xiaomi-aqara-weather-sensor.png",
+        label: function() {
+            return this.name || "ZiGate xiaomi Aqara Weather Sensor";
+        },
+        paletteLabel: "ZiGate Xiaomi Aqara Weather Sensor"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="zigate-xiaomi-aqara-weather-sensor">
+    <div class="form-row">
+        <label for="node-input-zigate"><i class="fa fa-globe"></i> Zigate</label>
+        <input type="text" id="node-input-zigate">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-shortAddress"><i class="icon-tag"></i> Short address</label>
+        <input type="text" id="node-input-shortAddress" placeholder="Short address">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="zigate-xiaomi-aqara-weather-sensor">
+    <p>ZiGate Xiaomi Aqara Weather Sensor</p>
+</script>

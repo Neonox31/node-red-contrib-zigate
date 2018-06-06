@@ -1,0 +1,34 @@
+image: node:8
+
+before_script:
+- echo -e "//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" > ~/.npmrc
+- yarn
+- node -v
+- npm -v
+- yarn -v
+
+stages:
+- test
+- deploy
+
+test:
+  stage: test
+  script:
+  - yarn test
+  cache:
+    key: ${CI_PIPELINE_IID}
+    paths:
+    - node_modules/
+    policy: push
+
+deploy tag:
+  stage: deploy
+  only:
+  - tags
+  cache:
+    key: ${CI_PIPELINE_IID}
+    paths:
+    - node_modules/
+    policy: pull
+  script:
+  - yarn publish --access public --new-version ${CI_COMMIT_TAG}
