@@ -16,7 +16,9 @@
     "url": "https://github.com/Neonox31/node-red-contrib-zigate/issues"
   },
   "homepage": "https://github.com/Neonox31/node-red-contrib-zigate#readme",
-  "keywords": [ "node-red" ],
+  "keywords": [
+    "node-red"
+  ],
   "node-red": {
     "nodes": {
       "zigate-config": "src/nodes/config/config.js",
@@ -28,6 +30,7 @@
     }
   },
   "dependencies": {
+    "@neonox31/zigate": "^1.0.0",
     "rxjs": "^6.2.1"
   },
   "devDependencies": {
