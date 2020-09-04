@@ -2114,8 +2114,8 @@ lodash.map@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
 
 lodash.merge@^4.4.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
 
 lodash.pick@^4.2.1:
   version "4.4.0"
@@ -3434,7 +3434,7 @@ shebang-regex@^1.0.0:
 
 should-equal@0.8.0:
   version "0.8.0"
-  resolved "http://registry.npmjs.org/should-equal/-/should-equal-0.8.0.tgz#a3f05732ff45bac1b7ba412f8408856819641299"
+  resolved "https://registry.npmjs.org/should-equal/-/should-equal-0.8.0.tgz#a3f05732ff45bac1b7ba412f8408856819641299"
   dependencies:
     should-type "0.2.0"
 
